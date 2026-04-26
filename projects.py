@@ -187,7 +187,17 @@ if show:
     }
 
     result = max(scores, key=scores.get)
+scope = ["https://spreadsheets.google.com/feeds",
 
+         "https://www.googleapis.com/auth/drive"]
+
+creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
+
+client = gspread.authorize(creds)
+
+sheet = client.open("personality_data").sheet1
+
+sheet.append_row([result])
     descriptions = {
         "الأحمر": """🔴 شخصية قيادية، تحب التحدي، سريعة في اتخاذ القرار.
 

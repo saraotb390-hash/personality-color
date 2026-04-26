@@ -316,7 +316,7 @@ st.markdown("""
 
     # حفظ
 new_data = pd.DataFrame({"color": [result]})
-    df = pd.concat([df, new_data], ignore_index=True)
+df = pd.concat([df, new_data], ignore_index=True)
     df.to_csv(file, index=False)
 
 # ===== الرسم =====

@@ -250,7 +250,7 @@ descriptions = {
 """
     }
 
-    total = red + blue + green + yellow
+ total = red + blue + green + yellow
 
     percentages = {
         "الأحمر": round((red / total) * 100),

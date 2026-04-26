@@ -264,8 +264,7 @@ color_bg = {
         "الأخضر": "#ddffdd",
         "الأصفر": "#fff6cc"
     }
-
- color_text = {
+color_text = {
         "الأحمر": "red",
         "الأزرق": "blue",
         "الأخضر": "green",

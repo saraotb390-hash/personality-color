@@ -297,7 +297,7 @@ st.markdown(f"""
     """, unsafe_allow_html=True)
 
     # 🔥 هذا اللي كان ناقصك (الوصف)
-    st.markdown(f"""
+st.markdown(f"""
     <div style='
     margin-top: 15px;
     font-size: 18px;

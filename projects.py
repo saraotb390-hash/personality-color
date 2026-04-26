@@ -198,7 +198,7 @@ client = gspread.authorize(creds)
 sheet = client.open("personality_data").sheet1
 
 sheet.append_row([result])
-    descriptions = {
+descriptions = {
         "الأحمر": """🔴 شخصية قيادية، تحب التحدي، سريعة في اتخاذ القرار.
 
 👥 دورك في الفريق: القائد

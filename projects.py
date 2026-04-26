@@ -308,7 +308,7 @@ st.markdown(f"""
     """, unsafe_allow_html=True)
 
     # ✨ جملة احترافية
-    st.markdown("""
+st.markdown("""
     <p style='text-align:center; color:gray;'>
     ✨ هذا التحليل يعكس ميولك العامة، وقد يختلف حسب المواقف والخبرات.
     </p>

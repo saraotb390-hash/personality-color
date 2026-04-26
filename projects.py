@@ -251,21 +251,21 @@ descriptions = {
     }
 total = red + blue + green + yellow
 
-    percentages = {
+percentages = {
         "الأحمر": round((red / total) * 100),
         "الأزرق": round((blue / total) * 100),
         "الأخضر": round((green / total) * 100),
         "الأصفر": round((yellow / total) * 100)
     }
 
-    color_bg = {
+color_bg = {
         "الأحمر": "#ffdddd",
         "الأزرق": "#ddeeff",
         "الأخضر": "#ddffdd",
         "الأصفر": "#fff6cc"
     }
 
-    color_text = {
+ color_text = {
         "الأحمر": "red",
         "الأزرق": "blue",
         "الأخضر": "green",

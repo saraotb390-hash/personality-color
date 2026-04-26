@@ -6,7 +6,8 @@ import os
 import matplotlib.pyplot as plt
 import arabic_reshaper
 from bidi.algorithm import get_display
-
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
 st.markdown("""
 <style>

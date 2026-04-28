@@ -29,7 +29,7 @@ file = "results.csv"
 if os.path.exists(file):
     df = pd.read_csv(file)
 else:
-df = pd.DataFrame(columns=["color"])
+    df = pd.DataFrame(columns=["color"])
 
 # ===============================
 # 👤 المستخدم

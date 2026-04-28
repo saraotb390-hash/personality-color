@@ -27,7 +27,7 @@ mode = st.query_params.get("mode", "user")
 # ===== ملف البيانات =====
 file = "results.csv"
 if os.path.exists(file):
-df = pd.read_csv(file)
+    df = pd.read_csv(file)
 else:
 df = pd.DataFrame(columns=["color"])
 

@@ -242,7 +242,7 @@ st.markdown(f"""
         </div>
         """, unsafe_allow_html=True)
 
-        st.markdown(descriptions[result])
+st.markdown(descriptions[result])
 
         # ===== حفظ محلي =====
         new_data = pd.DataFrame({"color": [result]})

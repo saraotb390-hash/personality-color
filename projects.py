@@ -220,7 +220,7 @@ percentages = {
             "الأصفر": round((yellow / total) * 100)
         }
 
-        st.markdown(f"""
+st.markdown(f"""
         <div style='
             background-color: {color_bg.get(result)};
             padding: 20px;

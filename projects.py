@@ -140,12 +140,13 @@ if mode == "user":
 
         creds = ServiceAccountCredentials.from_json_keyfile_dict(
           creds_dict,
-          scope)
+          scope
+        )
 
         client = gspread.authorize(creds)
         sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
 
-sheet.append_row([result])
+        sheet.append_row([result])
         # ===== الوصف =====
 descriptions = {
             "الأحمر": """🔴 شخصية قيادية، تحب التحدي، سريعة في اتخاذ القرار.

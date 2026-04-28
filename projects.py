@@ -321,8 +321,8 @@ if show:
     </div>
     """, unsafe_allow_html=True)
     new_data = pd.DataFrame({"color": [result]})
-df = pd.concat([df, new_data], ignore_index=True)
-df.to_csv(file, index=False)
+    df = pd.concat([df, new_data], ignore_index=True)
+    df.to_csv(file, index=False)
     # ✨ جملة احترافية
 st.markdown("""
     <p style='text-align:center; color:gray;'>

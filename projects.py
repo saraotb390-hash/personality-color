@@ -195,7 +195,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", sco
 
 client = gspread.authorize(creds)
 
-sheet = client.open("personality_data").sheet1
+sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing").sheet1
 
 sheet.append_row([result])
 descriptions = {

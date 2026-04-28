@@ -191,14 +191,12 @@ if show:
 
 creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
 
-if st.button("اعرض النتيجة"):
-    result = max(scores, key=scores.get)
-    client = gspread.authorize(creds)
-    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
+scope = ["https://spreadsheets.google.com/feeds",
 
-    sheet.append_row([result])
+         "https://www.googleapis.com/auth/drive"]
 
-    st.write(result)   
+creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
+ 
 descriptions = {
         "الأحمر": """🔴 شخصية قيادية، تحب التحدي، سريعة في اتخاذ القرار.
 

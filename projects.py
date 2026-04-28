@@ -320,6 +320,9 @@ if show:
     {descriptions[result]}
     </div>
     """, unsafe_allow_html=True)
+    new_data = pd.DataFrame({"color": [result]})
+df = pd.concat([df, new_data], ignore_index=True)
+df.to_csv(file, index=False)
     # ✨ جملة احترافية
 st.markdown("""
     <p style='text-align:center; color:gray;'>
@@ -327,11 +330,7 @@ st.markdown("""
     </p>
     """, unsafe_allow_html=True)
 
-    # حفظ
-new_data = pd.DataFrame({"color": [result]})
-df = pd.concat([df, new_data], ignore_index=True)
-df.to_csv(file, index=False)
-
+ 
 # ===== الرسم =====
 st.subheader("📊 توزيع الألوان")
 

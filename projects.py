@@ -246,8 +246,8 @@ st.markdown(descriptions[result])
 
         # ===== حفظ محلي =====
 new_data = pd.DataFrame({"color": [result]})
-        df = pd.concat([df, new_data], ignore_index=True)
-        df.to_csv(file, index=False)
+df = pd.concat([df, new_data], ignore_index=True)
+df.to_csv(file, index=False)
 
         st.markdown("""
         <p style='text-align:center; color:gray;'>

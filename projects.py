@@ -177,21 +177,25 @@ else:
 
 # ===== زر =====
 show = st.button("✨ إظهار النتيجة")
+
 if show:
 
+    # حساب السكور
     scores = {
         "الأحمر": red,
         "الأزرق": blue,
         "الأخضر": green,
         "الأصفر": yellow
     }
-scope = ["https://spreadsheets.google.com/feeds",
 
-         "https://www.googleapis.com/auth/drive"]
+    # Google Sheets setup
+    scope = ["https://spreadsheets.google.com/feeds",
+             "https://www.googleapis.com/auth/drive"]
 
-creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
- 
-descriptions = {
+    creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
+
+    # وصف الشخصيات
+    descriptions = {
         "الأحمر": """🔴 شخصية قيادية، تحب التحدي، سريعة في اتخاذ القرار.
 
 👥 دورك في الفريق: القائد
@@ -242,48 +246,55 @@ descriptions = {
 - التشتت
 """
     }
-result = max(scores, key=scores.get)
 
+    # النتيجة
+    result = max(scores, key=scores.get)
+
+    # إرسال إلى الشيت
     client = gspread.authorize(creds)
     sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
-
     sheet.append_row([result])
 
-    st.write(result)
-    st.write(descriptions[result])
-total = red + blue + green + yellow
+    # عرض نصي بسيط
+    st.write(f"✨ نتيجتك: {result}")
 
-percentages = {
+    # حساب النسب
+    total = red + blue + green + yellow
+
+    percentages = {
         "الأحمر": round((red / total) * 100),
         "الأزرق": round((blue / total) * 100),
         "الأخضر": round((green / total) * 100),
         "الأصفر": round((yellow / total) * 100)
     }
 
-color_bg = {
+    # الألوان
+    color_bg = {
         "الأحمر": "#ffdddd",
         "الأزرق": "#ddeeff",
         "الأخضر": "#ddffdd",
         "الأصفر": "#fff6cc"
     }
-color_text = {
+
+    color_text = {
         "الأحمر": "red",
         "الأزرق": "blue",
         "الأخضر": "green",
         "الأصفر": "orange"
     }
 
-    # 🎉 عرض النتيجة
-st.markdown(f"""
-<div style='
-    background-color: {color_bg.get(result)};
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 24px;
-    color: black;
-    box-shadow: 0px 0px 10px #ccc;
+    # 🎉 بوكس النتيجة
+    st.markdown(f"""
+    <div style='
+        background-color: {color_bg.get(result)};
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 24px;
+        color: black;
+        box-shadow: 0px 0px 10px #ccc;
     '>
+
     🎉 لون شخصيتك هو:
     <span style="color:{color_text.get(result)}; font-weight:bold;">
     {result}
@@ -295,24 +306,20 @@ st.markdown(f"""
     🔵 الأزرق: {percentages["الأزرق"]}% <br>
     🟢 الأخضر: {percentages["الأخضر"]}% <br>
     🟡 الأصفر: {percentages["الأصفر"]}%
+
     </div>
     """, unsafe_allow_html=True)
-descriptions = {
-    "الأحمر": "...",
-    "الأزرق": "...",
-}
 
-    # 🔥 هذا اللي كان ناقصك (الوصف)
-st.markdown(f"""
+    # 🔥 الوصف
+    st.markdown(f"""
     <div style='
-    margin-top: 15px;
-    font-size: 18px;
-    line-height: 1.8;
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 1.8;
     '>
     {descriptions[result]}
     </div>
     """, unsafe_allow_html=True)
-
     # ✨ جملة احترافية
 st.markdown("""
     <p style='text-align:center; color:gray;'>

@@ -185,25 +185,20 @@ if show:
         "الأخضر": green,
         "الأصفر": yellow
     }
-if st.button("اعرض النتيجة"):
-    result = max(scores, key=scores.get)
- client = gspread.authorize(creds)
-    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
-
-    sheet.append_row([result])
-
-    st.write(result)   
-scope = ["https://spreadsheets.google.com/feeds",
+    scope = ["https://spreadsheets.google.com/feeds",
 
          "https://www.googleapis.com/auth/drive"]
 
 creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
 
-client = gspread.authorize(creds)
+if st.button("اعرض النتيجة"):
+    result = max(scores, key=scores.get)
+    client = gspread.authorize(creds)
+    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
 
-sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing").sheet1
+    sheet.append_row([result])
 
-sheet.append_row([result])
+    st.write(result)   
 descriptions = {
         "الأحمر": """🔴 شخصية قيادية، تحب التحدي، سريعة في اتخاذ القرار.
 

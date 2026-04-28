@@ -148,7 +148,7 @@ sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIAS
 
 sheet.append_row([result])
         # ===== الوصف =====
-        descriptions = {
+descriptions = {
             "الأحمر": """🔴 شخصية قيادية، تحب التحدي، سريعة في اتخاذ القرار.
 
 👥 دورك في الفريق: القائد

@@ -185,12 +185,6 @@ if show:
         "الأخضر": green,
         "الأصفر": yellow
     }
-    scope = ["https://spreadsheets.google.com/feeds",
-
-         "https://www.googleapis.com/auth/drive"]
-
-creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
-
 scope = ["https://spreadsheets.google.com/feeds",
 
          "https://www.googleapis.com/auth/drive"]

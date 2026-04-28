@@ -222,7 +222,7 @@ percentages = {
 
 st.markdown(f"""
         <div style='
-            background-color: {color_bg.get(result)};
+            background-color: {color_bg.get(result,"#ffffff")};
             padding: 20px;
             border-radius: 15px;
             text-align: center;
@@ -231,7 +231,7 @@ st.markdown(f"""
             box-shadow: 0px 0px 10px #ccc;
         '>
         🎉 لون شخصيتك:
-        <span style="color:{color_text.get(result)}; font-weight:bold;">
+        <span style="color:{color_text.get(result,"black")}; font-weight:bold;">
         {result}
         </span>
         <hr>

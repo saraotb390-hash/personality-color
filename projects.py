@@ -222,7 +222,7 @@ percentages = {
 
 st.markdown(f"""
         <div style="
-            background-color: {color_bg.get(result,"#ffffff")};
+            background-color: {color_bg.get(result,'#ffffff')};
             padding: 20px;
             border-radius: 15px;
             text-align: center;

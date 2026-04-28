@@ -197,14 +197,14 @@ descriptions = {
 """
         }
 
-color_bg = {
+  color_bg = {
             "الأحمر": "#ffdddd",
             "الأزرق": "#ddeeff",
             "الأخضر": "#ddffdd",
             "الأصفر": "#fff6cc"
         }
 
-color_text = {
+   color_text = {
             "الأحمر": "red",
             "الأزرق": "blue",
             "الأخضر": "green",

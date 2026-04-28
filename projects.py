@@ -197,7 +197,7 @@ descriptions = {
 """
         }
 
-        color_bg = {
+color_bg = {
             "الأحمر": "#ffdddd",
             "الأزرق": "#ddeeff",
             "الأخضر": "#ddffdd",

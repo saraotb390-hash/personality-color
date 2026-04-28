@@ -219,9 +219,9 @@ percentages = {
             "الأخضر": round((green / total) * 100),
             "الأصفر": round((yellow / total) * 100)
         }
-st.write(result)
+
 st.markdown(f"""
-        <div style='
+        <div style="
             background-color: {color_bg.get(result,"#ffffff")};
             padding: 20px;
             border-radius: 15px;
@@ -229,7 +229,7 @@ st.markdown(f"""
             font-size: 24px;
             color: black;
             box-shadow: 0px 0px 10px #ccc;
-        '>
+        ">
         🎉 لون شخصيتك:
         <span style="color:{color_text.get(result,"black")}; font-weight:bold;">
         {result}

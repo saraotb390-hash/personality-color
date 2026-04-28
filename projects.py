@@ -213,7 +213,7 @@ color_text = {
 
 total = red + blue + green + yellow
 
-        percentages = {
+percentages = {
             "الأحمر": round((red / total) * 100),
             "الأزرق": round((blue / total) * 100),
             "الأخضر": round((green / total) * 100),

@@ -185,8 +185,14 @@ if show:
         "الأخضر": green,
         "الأصفر": yellow
     }
-
+if st.button("اعرض النتيجة"):
     result = max(scores, key=scores.get)
+ client = gspread.authorize(creds)
+    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
+
+    sheet.append_row([result])
+
+    st.write(result)   
 scope = ["https://spreadsheets.google.com/feeds",
 
          "https://www.googleapis.com/auth/drive"]

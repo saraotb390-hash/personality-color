@@ -275,7 +275,7 @@ color_text = {
 
     # 🎉 عرض النتيجة
 st.markdown(f"""
-    <div style='
+<div style='
     background-color: {color_bg.get(result)};
     padding: 20px;
     border-radius: 15px;

@@ -242,6 +242,16 @@ descriptions = {
 - التشتت
 """
     }
+if show:
+    result = max(scores, key=scores.get)
+
+    client = gspread.authorize(creds)
+    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
+
+    sheet.append_row([result])
+
+    st.write(result)
+    st.write(descriptions[result])
 total = red + blue + green + yellow
 
 percentages = {

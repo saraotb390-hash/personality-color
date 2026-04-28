@@ -242,7 +242,6 @@ descriptions = {
 - التشتت
 """
     }
-if show:
     result = max(scores, key=scores.get)
 
     client = gspread.authorize(creds)

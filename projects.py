@@ -122,7 +122,7 @@ else: yellow+=1
 show = st.button("✨ إظهار النتيجة")
 
 if show:
-
+    st.write("دخلت الزر")
     scores = {
         "الأحمر": red,
         "الأزرق": blue,

@@ -133,6 +133,7 @@ if show:
     result = max(scores, key=scores.get)
     st.write(result)
     # ===== Google Sheets =====
+    try :
     scope = ["https://spreadsheets.google.com/feeds",
      "https://www.googleapis.com/auth/drive"]
 
@@ -147,6 +148,9 @@ if show:
     sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
 
     sheet.append_row([result])
+    except Exception as e:
+
+    st.write("خطأ في Google Sheets:", e)
     # ===== الوصف =====
 descriptions = {
         "الأحمر": """🔴 شخصية قيادية، تحب التحدي، سريعة في اتخاذ القرار.

@@ -260,7 +260,7 @@ st.markdown("""
 # ===============================
 if mode == "admin":
 
-st.title("📊 توزيع الألوان")
+    st.title("📊 توزيع الألوان")
 
 if os.path.exists(file):
     df = pd.read_csv(file)

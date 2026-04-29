@@ -148,7 +148,7 @@ try :
     sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
 
     sheet.append_row([result])
-    except Exception as e:
+except Exception as e:
 
     st.write("خطأ في Google Sheets:", e)
     # ===== الوصف =====

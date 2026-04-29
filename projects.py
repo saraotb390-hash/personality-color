@@ -145,7 +145,7 @@ try :
     )
 
     client = gspread.authorize(creds)
-    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/18jwfUdACBIASrZTv7TJ4DNkPxob3MUulvHxKqdr1srY/edit?usp=sharing")
+    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1gpDjstU0L75CBINspW51IE_r0k0iZbzudgrorFabMQc/edit?usp=sharing")
 
     sheet.append_row([result])
 except Exception as e:

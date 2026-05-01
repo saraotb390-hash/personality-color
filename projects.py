@@ -142,7 +142,7 @@ try :
     )
 
     client = gspread.authorize(creds)
-    sheet = client.open("personality test").sheet1
+    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1rh_qlc52ytF5vntax0iRL6vkmZzGKt37MC_L2_iaojc/edit?gid=0#gid=0").sheet1
 
     sheet.append_row([result])
 except Exception as e:

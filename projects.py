@@ -21,9 +21,6 @@ font-size: 18px; border-radius: 10px; padding: 10px 20px;
 </style>
 """, unsafe_allow_html=True)
 
-# ===== الوضع =====
-mode = st.query_params.get("mode", "user")
-
 # ===== ملف البيانات =====
 file = "results.csv"
 if os.path.exists(file):
@@ -34,7 +31,7 @@ else:
 # ===============================
 # 👤 المستخدم
 # ===============================
-if mode == "user":
+
 
     st.markdown("""
 <h1 style='text-align: center; color: #FF4B4B; font-size: 50px;'>
@@ -262,7 +259,7 @@ st.markdown("""
 # ===============================
 # 📊 البروجكتر
 # ===============================
-if mode == "admin":
+
 
     st.title("📊 توزيع الألوان")
 

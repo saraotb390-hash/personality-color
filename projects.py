@@ -130,7 +130,7 @@ if show:
     result = max(scores, key=scores.get)
     st.write(result)
     # ===== Google Sheets =====
-    try :
+    try:
       scope = ["https://spreadsheets.google.com/feeds",
       "https://www.googleapis.com/auth/drive"]
 

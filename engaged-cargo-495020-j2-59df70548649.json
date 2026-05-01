@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "engaged-cargo-495020-j2",
+  "private_key_id": "59df70548649a8a040b339184d1390a3154359ac",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQvaClzUGm34Y4\nEhESK/0uwK2pUJHRVTxoNqjuqDM/2cTKpx3AauE79PXZNKRv1iczzfMGSbcl9nZX\n4BZCb1Q6MYdMYv+bKBaPLRl+5rRibg9Ct6SMWbIYV4VV0efM1LIM87mji4oDdRhq\n27TIy7eF9ViM2WR88fARvbFxEAPMe6zXR8hW8Iiox6NYmDMDvJ6DPdMRBWaz42W/\nHDJEefrbQZLrcA8VpaD/aNjyalCGVyOrqQIeukXmjDR/q3lp2zsCXJHZ0sHTylOV\nUL44HdodRLGS2iOgdkroaGVc8mDivW7sY80do15m4ZnoBG9JAm9qxjcQSMzFUcMb\n0giqCDRvAgMBAAECggEAHYGN2ZypI5KkESfzSXYgseui1fShcA1+3kefsICOd1Tr\n3YOAOp3rsZh06gY9b4uTe13+H3eVunmGDUeL40nZBj17Cl/8u+y6PPSF4+tuOHL7\nQusyM3P4WeWBNPouAcUCWBSu5dXIeqhM0nS1BM8lutCipYzoiJrVsa72i+yqGiIT\nQdT4wWiUqx+wVLPRHnPSaV3Hjd6h5EW6iw3ZiOPJFuHBGlOHntn01fOts4O5G/L8\nsetbwaCuIEuB3i3c8xRbPuJtuqEDp6lfK8SOqjSeLrs/aS7Uc3SHP82cRLQm5BOb\nfTDeo5uE/UyxMi01vbTzj4rkzrUbEdh9/klPZLXW4QKBgQDp6tyac+KwBGbqG3Ba\nh7LxEsGHBrl0l+Nmpc/GhoL9JRuQhw7mm/AeTKJu5aF1Rew9ZBr+LD/SMCUSZJS7\nMYnSnRMYpk37zczKpAz5jvkN2RTm3klX0FEBXdfbMmwyjuuBk0Yrk44fiC2qGpaR\nLqfLk637yDWeO02qL0+7AyxADwKBgQDkclCIX9K2Ezkf9EQWmV5imISP2J+VRRIN\nKVfdF25ukMlbPSmn7tSabMppkydzNBvBYF1DeW2FdYSxYCQEjjvj2/jCdCYO4+vM\nXcwDEyji46S2orBRkbq8xZ5U9hhDQjxEVAQ51meZDhYOpWFhD1A8y+dsmyaZ4Htv\nprNrHTJloQKBgQDUBhD9YqsHloXeDw7wz+0vPCv0gvDYsM/q+8JwFP5oDBmHEBQ+\njPvByv60fCm0DbQLFVCuMFeM4hzIJij13/on0D496ofnBGxrBPXJwoEWvzyF4tgh\n4215SqFcSsDttsPayC4jU3TQOfQCKmVtpRdsnChoftmy2dgUuRuQzFhwmwKBgB+x\nTELfKFhiKlaoiJmqBVIgXqOmJd2Li4mP5sShb4yfQZAK2DCYDZ6u4RXseFifLgqR\n1954hh0xxIrnD5giM2TVK5mui2kdbaUYjikPC2kOs9cykst+MC3oLKMU0SDjm4DP\nNxbfC9hL//tgLjZM7ZDBqQWEMMLARd+jfNirYEaBAoGAY2et/p2CUdpX9Mf6kjyC\n2zWn9Tv20bL5nbur3uY2++lld2PfAEM/oef0Ze/LE87zCmsqoRvkmIdEnLYvaeDG\nysl9oZZ0+gUuCivdOOG8t/7G/IynJOUfmMt1u7ARXHn1fjWhVCRalvw53hXgLQRD\nPxT4qdPeeB5I4Ey9TM1uuxs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "myproject@engaged-cargo-495020-j2.iam.gserviceaccount.com",
+  "client_id": "105536666845334286552",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/myproject%40engaged-cargo-495020-j2.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

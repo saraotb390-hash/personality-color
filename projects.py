@@ -130,19 +130,19 @@ if show:
     result = max(scores, key=scores.get)
     st.write(result)
     # ===== Google Sheets =====
-try:
-    scope = ["https://spreadsheets.google.com/feeds",
-     "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name(
-    "engaged-cargo-495020-j2-59df70548649.json",
-    scope
-    ) 
-    client = gspread.authorize(creds)
-    sheet = client.open_by_url("/1rh_qlc52ytF5vntax0iRL6vkmZzGKt37MC_L2_iaojc").sheet1
-    sheet.append_row([result])
-except Exception as e:
-    st.write("وصلت هنا")
-    st.write("خطأ في Google Sheets:", e)
+    try:
+        scope = ["https://spreadsheets.google.com/feeds",
+        "https://www.googleapis.com/auth/drive"]
+        creds = ServiceAccountCredentials.from_json_keyfile_name(
+        "engaged-cargo-495020-j2-59df70548649.json",
+        scope
+        ) 
+        client = gspread.authorize(creds)
+        sheet = client.open_by_url("/1rh_qlc52ytF5vntax0iRL6vkmZzGKt37MC_L2_iaojc").sheet1
+        sheet.append_row([result])
+ except Exception as e:
+       st.write("وصلت هنا")
+       st.write("خطأ في Google Sheets:", e)
     # ===== الوصف =====
 descriptions = {
         "الأحمر": """🔴 شخصية قيادية، تحب التحدي، سريعة في اتخاذ القرار.
